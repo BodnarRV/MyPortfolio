@@ -1,0 +1,39 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 12px;
+
+  li {
+    color: var(--linkInActive);
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+}
+
+@media (min-width: 768px) {
+  .list {
+    flex-direction: row;
+    gap: 24px;
+    padding-bottom: 0;
+  }
+
+  .list li {
+    color: var(--linkInActive);
+    cursor: pointer;
+  }
+
+  .navigation {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .list {
+    li:hover {
+      color: #8b919e;
+      transform: scale(1.1);
+    }
+  }
+}

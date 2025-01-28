@@ -1,0 +1,10 @@
+{
+  "myName": "Rostyslav",
+  "home": "home",
+  "projects": "projects",
+  "about": "about-me",
+  "contacts": "contacts",
+
+  "heroTitle": "Hi, my name is Rostyslav and I`m <span style='color: #C778DD;'>iOS / Frontend Developer</span> from Ukraine",
+  "heroSubtitle": "I`m creating websites and iOS apps where technologies meet creativity"
+}

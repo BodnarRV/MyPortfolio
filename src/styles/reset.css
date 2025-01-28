@@ -128,8 +128,6 @@ a {
 /* Image styling */
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 /* Button resets */

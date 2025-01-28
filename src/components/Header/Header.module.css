@@ -1,0 +1,79 @@
+.logo_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 21px;
+  color: var(--linkInActive);
+}
+
+.logo_img {
+  width: 16px;
+  height: 16px;
+}
+
+.menuList {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-25px, -48px);
+  height: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease, height 0.3s ease,
+    visibility 0s 0.3s;
+  width: 100%;
+}
+
+.menuList.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease, height 0.3s ease,
+    visibility 0s 0s;
+  height: calc(100vh - 75px);
+  padding-top: 16px;
+  background-image: url("../../assets/FunFactsImg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .logo_container {
+    width: auto;
+  }
+
+  .menuList {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    height: auto;
+    padding: 0;
+    background: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+    width: auto;
+  }
+
+  .menuList.show {
+    transition: none;
+    height: auto;
+    background-image: none;
+    padding-top: 0;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
