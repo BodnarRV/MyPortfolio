@@ -18,11 +18,16 @@ body {
 }
 
 .container {
-  max-width: 1024px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 15px 15px 0 15px;
 }
 
 .hash {
   color: var(--primary);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 25px 25px 0 25px;
+  }
 }

@@ -6,5 +6,7 @@
   "contacts": "contacts",
 
   "heroTitle": "Hi, my name is Rostyslav and I`m <span style='color: #C778DD;'>iOS / Frontend Developer</span> from Ukraine",
-  "heroSubtitle": "I`m creating websites and iOS apps where technologies meet creativity"
+  "heroSubtitle": "I`m creating websites and iOS apps where technologies meet creativity",
+  "contactMe": "Contact Me !",
+  "currentWork": "Currently open to work"
 }
