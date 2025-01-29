@@ -36,13 +36,42 @@
 @media (min-width: 768px) {
   .heroTitle {
     padding-bottom: 25px;
+    font-size: 24px;
   }
 
   .heroSubtitle {
     padding-bottom: 20px;
+    font-size: 14px;
   }
 
   .heroImg {
     max-width: 70%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info {
+    width: 52%;
+  }
+
+  .info_decor {
+    width: 40%;
+  }
+
+  .heroTitle {
+    font-size: 41px;
+  }
+
+  .heroSubtitle {
+    font-size: 16px;
+  }
+
+  .heroImg {
+    max-width: 100%;
   }
 }

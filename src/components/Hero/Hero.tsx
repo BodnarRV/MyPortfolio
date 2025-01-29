@@ -11,19 +11,25 @@ export default function Hero() {
 
   return (
     <section className="container">
-      <h1
-        className={s.heroTitle}
-        dangerouslySetInnerHTML={{ __html: t("heroTitle") }}
-      ></h1>
-      <p className={s.heroSubtitle}>{t("heroSubtitle")}</p>
-      <BaseButton href={"/"} text={t("contactMe")} />
-      <picture>
-        <source srcSet={HeroImg2x} media="(min-width: 768px)" />
-        <img className={s.heroImg} src={HeroImg} alt="HeroImg" />
-      </picture>
-      <div className={s.work_status}>
-        <div className={s.work_hash}></div>
-        {t("currentWork")}
+      <div className={s.hero_container}>
+        <div className={s.info}>
+          <h1
+            className={s.heroTitle}
+            dangerouslySetInnerHTML={{ __html: t("heroTitle") }}
+          ></h1>
+          <p className={s.heroSubtitle}>{t("heroSubtitle")}</p>
+          <BaseButton href={"/"} text={t("contactMe")} />
+        </div>
+        <div className={s.info_decor}>
+          <picture>
+            <source srcSet={HeroImg2x} media="(min-width: 768px)" />
+            <img className={s.heroImg} src={HeroImg} alt="HeroImg" />
+          </picture>
+          <div className={s.work_status}>
+            <div className={s.work_hash}></div>
+            {t("currentWork")}
+          </div>
+        </div>
       </div>
     </section>
   );
