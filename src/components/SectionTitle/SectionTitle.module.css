@@ -1,0 +1,52 @@
+.section_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 25px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  gap: 10px;
+}
+
+.pref {
+  color: var(--primary);
+}
+
+.title {
+  color: #fff;
+}
+
+.line {
+  background-color: var(--primary);
+  height: 1px;
+}
+
+.btn {
+  color: #fff;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+}

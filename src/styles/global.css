@@ -2,6 +2,7 @@
   --white: #ffffff;
   --black: #000000;
   --mainBackground: #282c33;
+  --shadowText: #949ba8;
   --linkInActive: #abb2bf;
   --primary: #c778dd;
 }
@@ -20,6 +21,11 @@ body {
 .container {
   margin: 0 auto;
   padding: 15px 15px 0 15px;
+}
+
+.container.quote {
+  display: flex;
+  justify-content: center;
 }
 
 .hash {

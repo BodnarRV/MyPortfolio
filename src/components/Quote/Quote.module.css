@@ -1,0 +1,46 @@
+.quote_container {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.quote {
+  border: 1px solid var(--linkInActive);
+  padding: 14px;
+}
+
+.author {
+  border: 1px solid var(--linkInActive);
+  border-top: none;
+  padding: 14px;
+}
+
+@media (min-width: 768px) {
+  .quote_container {
+    font-size: 20px;
+  }
+
+  .quote {
+    padding: 24px;
+  }
+
+  .author {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .quote_container {
+    font-size: 24px;
+  }
+
+  .quote {
+    padding: 32px;
+  }
+
+  .author {
+    padding: 32px;
+  }
+}

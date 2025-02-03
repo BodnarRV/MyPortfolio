@@ -8,5 +8,38 @@
   "heroTitle": "Hi, my name is Rostyslav and I`m <span style='color: #C778DD;'>iOS / Frontend Developer</span> from Ukraine",
   "heroSubtitle": "I`m creating websites and iOS apps where technologies meet creativity",
   "contactMe": "Contact Me !",
-  "currentWork": "Currently open to work"
+  "currentWork": "Currently open to work",
+
+  "quote": "With great power comes great electricity bill",
+  "quoteAuthor": "- Dr. Who",
+
+  "viewAll": "View all",
+
+  "areaLabelLve": "View live project",
+  "areaLabelGit": "View project on GitHub",
+
+  "portfolioProjAlt": "My portfolio image",
+  "myPortfolio": "My Portfolio",
+  "portfolioDescription": "My portfolio. Here you can see basic information about myself. This project will always be in progress because every day I'm trying to improve.",
+
+  "yachtjetImageAlt": "Yachtjet image",
+  "yachtjetDescription": "A team project in GoIT courses, where I was the Team Lead. It's a website where you can buy or rent a yacht.",
+
+  "webStudioImgImageAlt": "WebStudio image",
+  "webStudioDescription": "A personal project in GoIT courses. It's a website for a company, where there is information about the company, its projects, and workers.",
+
+  "searchImageAlt": "Search images website image",
+  "searchImgDescription": "A personal project in GoIT courses. Here you can search images",
+
+  "moviesDescription": "A personal project in GoIT courses. It's a website where you can find movies and look for trending movies.",
+
+  "phoneBookDescription": "A personal project in GoIT courses. It's a website where you can add, delete and find added contacts",
+
+  "monblanDescription": "Completed as a test task for one company.",
+
+  "typeMasterDescription": "I was looking for a new keyboard, found one I liked, and decided to copy the web design of the description for this keyboard.",
+
+  "spacelanceDescription": "One of the projects that I developed based on a free Figma design",
+
+  "productPreviewDescription": "Small project: product preview card. It was a task from a free YouTube course."
 }
