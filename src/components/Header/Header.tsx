@@ -3,7 +3,7 @@ import Hamburger from "hamburger-react";
 import s from "./Header.module.css";
 import color from "../../colors";
 
-import logo from "../../assets/social/Logo.png";
+import Logo from "../../assets/social/Logo.png";
 import MenuList from "./MenuList/MenuList";
 import { useDispatch, useSelector } from "react-redux";
 import { selectHamburgerState } from "../../redux/hamburger/selectors";
@@ -20,7 +20,7 @@ export default function Header() {
       <header className={`container ${s.header}`}>
         <div className={s.logo_container}>
           <a className={s.title} href="/">
-            <img className={s.logo_img} src={logo} />
+            <img className={s.logo_img} src={Logo} />
             {t("myName")}
           </a>
           <div className={s.hamburger}>

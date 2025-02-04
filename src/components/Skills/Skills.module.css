@@ -1,0 +1,16 @@
+.skills_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills_image {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .skills_image {
+    display: block;
+    width: 40%;
+    height: 80%;
+  }
+}

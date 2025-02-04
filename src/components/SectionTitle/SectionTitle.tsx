@@ -7,7 +7,7 @@ type SectionTitleType = {
   isLine?: boolean;
   isBtn?: boolean;
   btnText?: string;
-  href: string;
+  href?: string;
   lineWidth?: string;
 };
 

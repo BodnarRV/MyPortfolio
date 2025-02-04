@@ -23,7 +23,7 @@ const IconSvg: React.FC<IconProps> = ({
       fill={color}
       aria-hidden="true"
     >
-      <use xlinkHref={`/src/assets/icons.svg#${id}`} />
+      <use xlinkHref={`${import.meta.env.BASE_URL}assets/icons.svg#${id}`} />
     </svg>
   );
 };

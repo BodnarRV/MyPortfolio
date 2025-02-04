@@ -44,12 +44,14 @@ const Project: React.FC<ProjectProps> = ({
             text="Live"
             ariaLabel={t("areaLabelLive")}
             className={s.btn}
+            target="blank"
           />
           <BaseButton
             href={gitLink}
             text="Git"
             ariaLabel={t("areaLabelGit")}
             className={s.btn}
+            target="blank"
           />
         </div>
       </div>

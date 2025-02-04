@@ -1,0 +1,40 @@
+.aboutMe_container {
+  padding-top: 25px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.text {
+  font-size: 14px;
+  color: var(--shadowText);
+  display: -webkit-box;
+  -webkit-line-clamp: 29;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.aboutMe_img {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .aboutMe_container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .aboutMe_img {
+    display: block;
+    width: 40%;
+    height: 80%;
+  }
+}

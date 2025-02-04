@@ -41,5 +41,17 @@
 
   "spacelanceDescription": "One of the projects that I developed based on a free Figma design",
 
-  "productPreviewDescription": "Small project: product preview card. It was a task from a free YouTube course."
+  "productPreviewDescription": "Small project: product preview card. It was a task from a free YouTube course.",
+
+  "skills": "skills",
+
+  "readMore": "Read More",
+
+  "aboutMeText": " Hello, my name is Rostyslav!<br><br><br> In 2019, I began my journey at Dewlight as a trainee iOS developer. Following my training, I successfully interviewed for a Junior iOS Developer position and started working on the company's project, Devlight ERM. This application, designed for company employees, provides information about the company, vacation tracking, project histories, company news, and more. I was the sole developer on this project.<br><br>  Concurrently, my friends and I initiated a startup project called Malo, an app for restaurants. This app allows users to place orders, make payments, leave feedback for restaurants and staff, and track their favorite places and foods. My primary contribution to this project was creating the user interface.<br><br>  After my time at Dewlight, I joined SoftServe and worked there for 2 years on a project in the healthcare domain. My responsibilities included providing new features, fixing bugs, and occasionally refactoring code.<br><br> I finished the GoIT Fullstack Developer courses and want to pursue a career as a Frontend/Fullstack Developer. Here, you can see the projects I completed during the courses, as well as my pet project, which I worked on to improve  my skills.",
+
+  "messageME": "Message me here",
+  "contactsText": "I’m interested in full-time Frontend/Fullstack opportunities. However, if you have other request or question, don't hesitate to contact me",
+
+  "footerAboutText": "Frontend/Fullstack developer",
+  "media": "Media"
 }
