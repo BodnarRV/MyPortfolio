@@ -22,20 +22,9 @@ export default function Footer() {
           <div className={s.media}>
             <h3 className={s.media_title}>{t("media")}</h3>
             <div className={s.media_links}>
-              <IconSvg id="github" className={s.icon} width={24} height={24} />
-              <IconSvg
-                id="telegram"
-                className={s.icon}
-                width={24}
-                height={24}
-              />
-              <IconSvg
-                id="instagram"
-                className={s.icon}
-                width={24}
-                height={24}
-              />
-              <IconSvg id="discord" className={s.icon} width={24} height={24} />
+              <IconSvg id="icon-github" className={s.icon} />
+              <IconSvg id="icon-telegram" className={s.icon} />
+              <IconSvg id="icon-linkedin" className={s.icon} />
             </div>
           </div>
           <p className={s.copyright}>&copy; 2025. Develop by Rostyslav</p>

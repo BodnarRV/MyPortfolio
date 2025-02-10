@@ -48,6 +48,8 @@ export const SkillsData = [
       "FBSDKLogin",
       "Amplitude",
       "Piwik",
+      "Firebase",
+      "MongoDB",
     ],
   },
 ];

@@ -5,7 +5,7 @@ import { contactsData } from "./ContactsData";
 import { useTranslation } from "react-i18next";
 import IconSvg from "../IconSvg/IconSvg";
 
-export default function Contacts() {
+export default function Contacts({ isLine = true }) {
   const { t } = useTranslation();
 
   return (
@@ -13,7 +13,7 @@ export default function Contacts() {
       <SectionTitle
         pref={"#"}
         title={t("contacts")}
-        isLine={true}
+        isLine={isLine}
         lineWidth="30%"
       />
       <div className={s.contacts_container}>
@@ -27,12 +27,7 @@ export default function Contacts() {
               href={contact.href}
               target="blank"
             >
-              <IconSvg
-                id={contact.img}
-                className={s.icon}
-                width={24}
-                height={24}
-              />
+              <IconSvg id={contact.img} className={s.icon} />
               <span className={s.contact_text}>{contact.text}</span>
             </a>
           ))}

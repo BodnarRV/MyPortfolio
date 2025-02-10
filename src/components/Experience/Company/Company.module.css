@@ -1,0 +1,63 @@
+.company_container {
+  border: 0.5px solid #fff;
+  height: max-content;
+  font-size: 14px;
+}
+
+.img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-bottom: 0.5px solid #fff;
+}
+
+.role {
+  padding: 10px;
+  font-size: 14px;
+  color: var(--shadowText);
+  border-bottom: 0.5px solid #fff;
+}
+
+.about_company {
+  padding: 10px;
+  border-bottom: 0.5px solid #fff;
+}
+
+.company_name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 6px;
+}
+
+.duration {
+  color: var(--shadowText);
+}
+
+.about {
+  padding: 10px;
+}
+
+.project_title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 6px;
+}
+
+.project_about {
+  color: var(--shadowText);
+}
+
+.responsibilities {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px;
+}
+
+.responsibility {
+  font-size: 14px;
+  font-weight: normal;
+  color: var(--shadowText);
+}

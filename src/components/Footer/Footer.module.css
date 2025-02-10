@@ -34,18 +34,61 @@
   color: #fff;
 }
 
+.media {
+  text-align: center;
+}
+
+.media_links {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 8px;
+}
+
 .media_title {
   color: #fff;
   font-size: 18px;
 }
 
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
 .copyright {
   color: var(--linkInActive);
   text-align: center;
+  padding-bottom: 25px;
 }
 
-.icon {
-  width: 40px;
-  height: 40px;
-  fill: #fff;
+@media (min-width: 768px) {
+  .footer_container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .logo_container,
+  .media {
+    flex: 1;
+  }
+
+  .media {
+    text-align: right;
+  }
+
+  .media_links {
+    justify-content: right;
+  }
+
+  .copyright {
+    width: 100%;
+    text-align: center;
+  }
 }

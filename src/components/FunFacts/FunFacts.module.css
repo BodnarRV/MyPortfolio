@@ -1,0 +1,16 @@
+.funFacts_container {
+  display: flex;
+}
+
+.funFacts {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .funFacts_container {
+    justify-content: space-between;
+  }
+}

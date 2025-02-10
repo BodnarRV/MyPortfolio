@@ -6,24 +6,27 @@ import BaseButton from "../BaseButton/BaseButton";
 
 import AboutMeImg from "../../assets/AboutMeImg.png";
 
-export default function AboutMe() {
+export default function AboutMe({ isTitle = true, isButton = true }) {
   const { t } = useTranslation();
 
   return (
     <section className="container">
-      <SectionTitle
-        pref={"#"}
-        title={t("about")}
-        isLine={true}
-        lineWidth="20%"
-      />
+      {isTitle && (
+        <SectionTitle
+          pref={"#"}
+          title={t("about")}
+          isLine={true}
+          lineWidth="20%"
+        />
+      )}
+
       <div className={s.aboutMe_container}>
         <div className={s.info}>
           <p
             className={s.text}
             dangerouslySetInnerHTML={{ __html: t("aboutMeText") }}
           />
-          <BaseButton href={"/"} text={t("readMore") + " ->"} />
+          {isButton && <BaseButton href={"/"} text={t("readMore") + " ->"} />}
         </div>
         <img className={s.aboutMe_img} src={AboutMeImg} alt="About me image" />
       </div>

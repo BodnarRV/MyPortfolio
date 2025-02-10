@@ -9,6 +9,7 @@ type SectionTitleType = {
   btnText?: string;
   href?: string;
   lineWidth?: string;
+  paddingTop?: string;
 };
 
 const SectionTitle: React.FC<SectionTitleType> = ({
@@ -19,9 +20,10 @@ const SectionTitle: React.FC<SectionTitleType> = ({
   isBtn = false,
   btnText,
   href,
+  paddingTop,
 }) => {
   return (
-    <div className={s.section_container}>
+    <div className={s.section_container} style={{ paddingTop }}>
       <div className={s.name}>
         <h3 className={s.title}>
           <span className={s.pref}>{pref}</span>

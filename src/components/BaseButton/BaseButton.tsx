@@ -7,6 +7,7 @@ type BaseButtonProps = {
   ariaLabel?: string;
   className?: string;
   target?: string;
+  children?: React.ReactNode;
 };
 
 const BaseButton: React.FC<BaseButtonProps> = ({
@@ -15,6 +16,7 @@ const BaseButton: React.FC<BaseButtonProps> = ({
   ariaLabel,
   className,
   target,
+  children,
 }) => {
   return (
     <div className={s.btn_container}>
@@ -24,6 +26,7 @@ const BaseButton: React.FC<BaseButtonProps> = ({
         aria-label={ariaLabel}
         target={target}
       >
+        {children}
         {text}
       </a>
     </div>

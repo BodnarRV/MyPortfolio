@@ -2,6 +2,7 @@
   "myName": "Ростислав",
   "home": "головна",
   "projects": "проєкти",
+  "projectTitle": "Проєкт",
   "about": "про-мене",
   "contacts": "контакти",
 
@@ -53,5 +54,44 @@
   "contactsText": "Я зацікавлений у роботі Frontend/Fullstack на повний робочий день. Однак, якщо у вас є інші запити або питання, будь ласка, не соромтеся звертатися до мене.",
 
   "footerAboutText": "Frontend/Fullstack розробник",
-  "media": "Медіа"
+  "media": "Медіа",
+
+  "experience": "досвід",
+  "responsibilities": "Обовʼязки",
+
+  "maloName": "MALO",
+  "maloDuration": "Лют 2020 - Лис 2020",
+  "maloAbout": "Додаток у сфері ресторанного бізнесу, де користувачі можуть ознайомитися з меню та замовити страви.",
+  "maloResponsibilities1": "Генеральний директор, управління, продукт, маркетинг;",
+  "maloResponsibilities2": "Створення структури продукту;",
+  "maloResponsibilities3": "Розробка.",
+
+  "devlightName": "Devlight",
+  "devlightDuration": "Груд 2019 - Груд 2020",
+  "devlightAbout": "Внутрішній додаток для ERM, який дає можливість отримати інформацію про себе та своїх колег.",
+  "devlightResponsibilities": "Розробка.",
+
+  "softServeName": "SoftServe",
+  "softServeDuration": "Груд 2021 - Кві 2024",
+  "softServeAbout": "Додаток у сфері охорони здоров'я",
+  "softServeResponsibilities1": "Розробка та впровадження нового функціоналу;",
+  "softServeResponsibilities2": "Робота над багами.",
+
+  "myWay": "Мій шлях в айті",
+
+  "funFactsTitle": "цікаве-про-мене",
+  "courses": "курси",
+  "goITCourseDescription": "Курси включають в себе вивчення HTML, CSS, JS, React.JS, Typescript, Mode.js",
+  "lltCourseDescription": "Одні з найкращих Frontend курсів для початківців українською на YouTube",
+  "coursesWebsiteText": "Сайт курсів",
+
+  "whoAmI": "Хто я ?",
+
+  "funFact1": "Я більше люблю зиму, ніж літо",
+  "funFact2": "Я часто катаюся на сноуборді з друзями",
+  "funFact3": "Я люблю піцу та пасту",
+  "funFact4": "Я був в Єгипті, Польщі, Німеччині та Туреччині",
+  "funFact5": "Мої улюблені фільми - Володар перснів, Хоббіт і Гаррі Поттер",
+  "funFact6": "Я працював майстром кальяну протягом 4 років",
+  "funFact7": "Я люблю складати LEGO"
 }

@@ -2,6 +2,7 @@
   "myName": "Rostyslav",
   "home": "home",
   "projects": "projects",
+  "projectTitle": "Project",
   "about": "about-me",
   "contacts": "contacts",
 
@@ -53,5 +54,45 @@
   "contactsText": "I’m interested in full-time Frontend/Fullstack opportunities. However, if you have other request or question, don't hesitate to contact me",
 
   "footerAboutText": "Frontend/Fullstack developer",
-  "media": "Media"
+  "media": "Media",
+
+  "experience": "experience",
+
+  "responsibilities": "Responsibilities",
+
+  "maloName": "MALO",
+  "maloDuration": "Feb 2020 - Nov 2020",
+  "maloAbout": "An application in the restaurant domain where users can explore the menu and make an order.",
+  "maloResponsibilities": "CEO, Managing, Product, Marketing;",
+  "maloResponsibilities2": "Creating the product structure;",
+  "maloResponsibilities3": "Developing.",
+
+  "devlightName": "Devlight",
+  "devlightDuration": "Dec 2019 - Dec 2020",
+  "devlightAbout": "Internal application for ERM which get an opportunity to see info about yourself and your colleagues.",
+  "devlightResponsibilities": "Developing.",
+
+  "softServeName": "SoftServe",
+  "softServeDuration": "Dec 2021 - Apr 2024",
+  "softServeAbout": "An application in health care domain",
+  "softServeResponsibilities1": "Developing and generating new features;",
+  "softServeResponsibilities2": "Fixing application bugs.",
+
+  "myWay": "My way in IT",
+
+  "funFactsTitle": "my-fun-facts",
+  "courses": "courses",
+  "goITCourseDescription": "The courses include learning HTML, CSS, JavaScript, React.js, TypeScript, and Node.js.",
+  "lltCourseDescription": "One of the best Frontend Ukrainian courses for beginners on YouTube",
+  "coursesWebsiteText": "Courses website",
+
+  "whoAmI": "Who am I ?",
+
+  "funFact1": "I like winter more than summer",
+  "funFact2": "I often snowboard with my friends",
+  "funFact3": "I like <span style='color: #fff;'>pizza</span> and <span style='color: #fff;'>pasta</span>",
+  "funFact4": "I was in <span style='color: #fff;'>Egypt</span>, <span style='color: #fff;'>Poland</span>, <span style='color: #fff;'>Germany</span> and <span style='color: #fff;'>Turkey</span>",
+  "funFact5": "My favorite movies are <span style='color: #fff;'>Lord of The Rings</span>, <span style='color: #fff;'>Hobbit</span> and <span style='color: #fff;'>Harry Potter</span>",
+  "funFact6": "I worked as a hookah master for 4 years.",
+  "funFact7": "I love building LEGO"
 }

@@ -1,0 +1,15 @@
+.funFact_container {
+  padding: 8px;
+  border: 1px solid var(--linkInActive);
+}
+
+.funFact {
+  font-size: 14px;
+  color: var(--shadowText);
+}
+
+@media (min-width: 768px) {
+  .funFact {
+    font-size: 16px;
+  }
+}

@@ -1,15 +1,9 @@
-.project_container {
-  height: max-content;
+.course_container {
   border: 0.5px solid #fff;
+  height: max-content;
 }
 
-.img {
-  width: 100%;
-  height: auto;
-  border-bottom: 0.5px solid #fff;
-}
-
-.technologies {
+.specialty {
   padding: 10px;
   font-size: 14px;
   color: var(--shadowText);
@@ -20,7 +14,7 @@
   padding: 10px;
 }
 
-.projName {
+.courseName {
   font-weight: bold;
   color: #fff;
 }
@@ -28,21 +22,11 @@
 .descr {
   font-size: 12px;
   padding-top: 9px;
+  padding-bottom: 9px;
   color: var(--shadowText);
-}
-
-.links_container {
-  display: flex;
-  gap: 10px;
-  padding-top: 20px;
 }
 
 .btn {
   padding: 5px 16px;
   font-size: 12px;
-}
-
-.btn_icon {
-  width: 24px;
-  height: 24px;
 }

@@ -2,16 +2,18 @@ import React from "react";
 import s from "./Project.module.css";
 import { useTranslation } from "react-i18next";
 import BaseButton from "../../BaseButton/BaseButton";
+import IconSvg from "../../IconSvg/IconSvg";
 
 type ProjectProps = {
   imageUrl?: string | null;
   imageAlt?: string;
-  technologies: string;
+  technologies?: string;
   projName: string;
   description: string;
-  liveLink: string;
-  gitLink: string;
+  liveLink?: string;
+  gitLink?: string;
 };
+
 const Project: React.FC<ProjectProps> = ({
   imageUrl,
   imageAlt,
@@ -45,14 +47,18 @@ const Project: React.FC<ProjectProps> = ({
             ariaLabel={t("areaLabelLive")}
             className={s.btn}
             target="blank"
-          />
+          >
+            <IconSvg id="icon-live" className={s.btn_icon} />
+          </BaseButton>
           <BaseButton
             href={gitLink}
-            text="Git"
             ariaLabel={t("areaLabelGit")}
             className={s.btn}
-            target="blank"
-          />
+            target="_blank"
+          >
+            <IconSvg id="icon-github" className={s.btn_icon} />
+            Git
+          </BaseButton>
         </div>
       </div>
     </div>
