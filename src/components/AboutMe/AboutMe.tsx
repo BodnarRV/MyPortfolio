@@ -26,7 +26,9 @@ export default function AboutMe({ isTitle = true, isButton = true }) {
             className={s.text}
             dangerouslySetInnerHTML={{ __html: t("aboutMeText") }}
           />
-          {isButton && <BaseButton href={"/"} text={t("readMore") + " ->"} />}
+          {isButton && (
+            <BaseButton href={"/about"} text={t("readMore") + " ->"} />
+          )}
         </div>
         <img className={s.aboutMe_img} src={AboutMeImg} alt="About me image" />
       </div>
