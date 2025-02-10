@@ -18,7 +18,7 @@ export default function Hero() {
             dangerouslySetInnerHTML={{ __html: t("heroTitle") }}
           ></h1>
           <p className={s.heroSubtitle}>{t("heroSubtitle")}</p>
-          <BaseButton href={"/"} text={t("contactMe")} />
+          <BaseButton href={"/contacts"} text={t("contactMe")} />
         </div>
         <div className={s.info_decor}>
           <picture>

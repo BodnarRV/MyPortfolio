@@ -2,18 +2,18 @@ export const contactsData = [
   {
     img: "icon-email",
     text: "bodnrostyslav@gmail.com",
-    href: "",
+    href: "bodnrostyslav@gmail.com",
   },
 
   {
     img: "icon-linkedin",
     text: "Bodnar Rostyslav",
-    href: "",
+    href: "https://www.linkedin.com/in/rostyslav-bodnar/",
   },
 
   {
     img: "icon-telegram",
     text: "Rostyslav",
-    href: "",
+    href: "https://t.me/Rost9933/266849",
   },
 ];

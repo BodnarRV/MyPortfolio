@@ -20,17 +20,30 @@ export default function Contacts({ isLine = true }) {
         <p className={s.text}>{t("contactsText")}</p>
         <div className={s.contacts}>
           <h3 className={s.title}>{t("messageME")}</h3>
-          {contactsData.map((contact, index) => (
-            <a
-              key={index}
-              className={s.contact}
-              href={contact.href}
-              target="blank"
-            >
-              <IconSvg id={contact.img} className={s.icon} />
-              <span className={s.contact_text}>{contact.text}</span>
-            </a>
-          ))}
+          {contactsData.map((contact, index) => {
+            const isEmail = contact.href.includes("@");
+            return isEmail ? (
+              <a
+                key={index}
+                className={s.contact}
+                href={`mailto:${contact.href}`}
+              >
+                <IconSvg id={contact.img} className={s.icon} />
+                <span className={s.contact_text}>{contact.text}</span>
+              </a>
+            ) : (
+              <a
+                key={index}
+                className={s.contact}
+                href={contact.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IconSvg id={contact.img} className={s.icon} />
+                <span className={s.contact_text}>{contact.text}</span>
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -21,7 +21,7 @@ export default function Projects() {
         lineWidth="30%"
         isBtn={true}
         btnText={t("viewAll")}
-        href="/"
+        href="/experience"
       />
 
       <Swiper

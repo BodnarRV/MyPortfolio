@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import s from "./BaseButton.module.css";
 
 type BaseButtonProps = {
@@ -14,21 +15,35 @@ const BaseButton: React.FC<BaseButtonProps> = ({
   href,
   text,
   ariaLabel,
-  className,
+  className = "",
   target,
   children,
 }) => {
+  const isExternal = /^https?:\/\//.test(href);
+
   return (
     <div className={s.btn_container}>
-      <a
-        href={href}
-        className={`${s.link} ${className}`}
-        aria-label={ariaLabel}
-        target={target}
-      >
-        {children}
-        {text}
-      </a>
+      {isExternal ? (
+        <a
+          href={href}
+          className={`${s.link} ${className}`}
+          aria-label={ariaLabel}
+          target={target || "_blank"}
+          rel="noopener noreferrer"
+        >
+          {children}
+          {text}
+        </a>
+      ) : (
+        <NavLink
+          to={href}
+          className={`${s.link} ${className}`}
+          aria-label={ariaLabel}
+        >
+          {children}
+          {text}
+        </NavLink>
+      )}
     </div>
   );
 };

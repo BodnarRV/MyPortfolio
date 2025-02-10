@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import s from "./SectionTitle.module.css";
 
 type SectionTitleType = {
@@ -19,9 +20,11 @@ const SectionTitle: React.FC<SectionTitleType> = ({
   lineWidth,
   isBtn = false,
   btnText,
-  href,
+  href = "#",
   paddingTop,
 }) => {
+  const isExternal = href.startsWith("http://") || href.startsWith("https://");
+
   return (
     <div className={s.section_container} style={{ paddingTop }}>
       <div className={s.name}>
@@ -31,11 +34,22 @@ const SectionTitle: React.FC<SectionTitleType> = ({
         </h3>
         {isLine && <div className={s.line} style={{ width: lineWidth }}></div>}
       </div>
-      {isBtn && (
-        <a href={href} className={s.btn}>
-          {btnText}~~{">"}
-        </a>
-      )}
+      {isBtn &&
+        href &&
+        (isExternal ? (
+          <a
+            href={href}
+            className={s.btn}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {btnText}~~{">"}
+          </a>
+        ) : (
+          <NavLink to={href} className={s.btn}>
+            {btnText}~~{">"}
+          </NavLink>
+        ))}
     </div>
   );
 };

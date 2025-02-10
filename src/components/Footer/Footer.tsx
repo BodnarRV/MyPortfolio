@@ -22,9 +22,27 @@ export default function Footer() {
           <div className={s.media}>
             <h3 className={s.media_title}>{t("media")}</h3>
             <div className={s.media_links}>
-              <IconSvg id="icon-github" className={s.icon} />
-              <IconSvg id="icon-telegram" className={s.icon} />
-              <IconSvg id="icon-linkedin" className={s.icon} />
+              <a
+                href="https://github.com/BodnarRV"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IconSvg id="icon-github" className={s.icon} />
+              </a>
+              <a
+                href="https://t.me/Rost9933/266849"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IconSvg id="icon-telegram" className={s.icon} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/rostyslav-bodnar/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IconSvg id="icon-linkedin" className={s.icon} />
+              </a>
             </div>
           </div>
           <p className={s.copyright}>&copy; 2025. Develop by Rostyslav</p>

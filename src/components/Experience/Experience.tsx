@@ -21,6 +21,7 @@ export default function Experience() {
         btnText={t("viewAll")}
         isLine={true}
         lineWidth="30%"
+        href="/experience"
       />
 
       <Swiper
