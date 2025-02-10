@@ -16,7 +16,6 @@ export default function Course({
   courseName,
   description,
   websiteLink,
-  btnImg,
 }: CourseProps) {
   const { t } = useTranslation();
 
@@ -27,11 +26,10 @@ export default function Course({
         <h3 className={s.courseName}>{courseName}</h3>
         <p className={s.descr}>{t(description)}</p>
         <BaseButton
-          href={websiteLink}
+          href={websiteLink ?? ""}
           text={t("coursesWebsiteText")}
           className={s.btn}
           target="blank"
-          icon={btnImg}
         />
       </div>
     </div>

@@ -4,7 +4,7 @@ import s from "./BaseButton.module.css";
 
 type BaseButtonProps = {
   href: string;
-  text: string;
+  text?: string;
   ariaLabel?: string;
   className?: string;
   target?: string;

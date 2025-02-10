@@ -34,7 +34,7 @@ const Project: React.FC<ProjectProps> = ({
           alt={imageAlt ?? "Project image"}
         />
       )}
-      <p className={s.technologies}>{t(technologies)}</p>
+      <p className={s.technologies}>{t(technologies ?? "")}</p>
 
       <div className={s.descr_container}>
         <h3 className={s.projName}>{t(projName)}</h3>
@@ -42,7 +42,7 @@ const Project: React.FC<ProjectProps> = ({
 
         <div className={s.links_container}>
           <BaseButton
-            href={liveLink}
+            href={liveLink ?? ""}
             text="Live"
             ariaLabel={t("areaLabelLive")}
             className={s.btn}
@@ -51,7 +51,7 @@ const Project: React.FC<ProjectProps> = ({
             <IconSvg id="icon-live" className={s.btn_icon} />
           </BaseButton>
           <BaseButton
-            href={gitLink}
+            href={gitLink ?? ""}
             ariaLabel={t("areaLabelGit")}
             className={s.btn}
             target="_blank"
