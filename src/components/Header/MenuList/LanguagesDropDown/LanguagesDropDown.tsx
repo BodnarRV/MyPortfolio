@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import s from "./LanguagesDropDown.module.css";
 
-export default function LanguagesDropDown({ closeHamburger }) {
+// Define the type for the props
+type LanguagesDropDownProps = {
+  closeHamburger: () => void;
+};
+
+const LanguagesDropDown: React.FC<LanguagesDropDownProps> = ({
+  closeHamburger,
+}) => {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
   const { i18n, t } = useTranslation();
 
@@ -49,4 +56,6 @@ export default function LanguagesDropDown({ closeHamburger }) {
       </span>
     </div>
   );
-}
+};
+
+export default LanguagesDropDown;

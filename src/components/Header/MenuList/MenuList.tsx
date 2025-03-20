@@ -4,7 +4,11 @@ import { NavLink } from "react-router-dom";
 import s from "./MenuList.module.css";
 import LanguagesDropDown from "./LanguagesDropDown/LanguagesDropDown";
 
-export default function MenuList({ handleClick }) {
+type MenuListProps = {
+  handleClick: () => void;
+};
+
+const MenuList: React.FC<MenuListProps> = ({ handleClick }) => {
   const { t } = useTranslation();
   const menuItems = [
     { path: "/", label: "home" },
@@ -31,4 +35,6 @@ export default function MenuList({ handleClick }) {
       <LanguagesDropDown closeHamburger={handleClick} />
     </nav>
   );
-}
+};
+
+export default MenuList;
