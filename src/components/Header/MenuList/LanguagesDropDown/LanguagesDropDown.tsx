@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import s from "./LanguagesDropDown.module.css";
 
-// Define the type for the props
 type LanguagesDropDownProps = {
   closeHamburger: () => void;
 };
