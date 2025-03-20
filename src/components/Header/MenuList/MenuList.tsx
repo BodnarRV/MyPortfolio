@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import s from "./MenuList.module.css";
 import LanguagesDropDown from "./LanguagesDropDown/LanguagesDropDown";
 
-export default function MenuList() {
+export default function MenuList({ handleClick }) {
   const { t } = useTranslation();
   const menuItems = [
     { path: "/", label: "home" },
@@ -17,7 +17,7 @@ export default function MenuList() {
     <nav className={`container ${s.navigation}`}>
       <ul className={s.list}>
         {menuItems.map(({ path, label }, index) => (
-          <li key={index}>
+          <li key={index} onClick={handleClick}>
             <NavLink
               to={path}
               className={({ isActive }) => (isActive ? s.activeLink : "")}
@@ -28,7 +28,7 @@ export default function MenuList() {
           </li>
         ))}
       </ul>
-      <LanguagesDropDown />
+      <LanguagesDropDown closeHamburger={handleClick} />
     </nav>
   );
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hamburger from "hamburger-react";
 import s from "./Header.module.css";
 import color from "../../colors";
@@ -14,6 +14,24 @@ export default function Header() {
   const { t } = useTranslation();
   const dispatch = useDispatch();
   const selectHamburgerIsOpen = useSelector(selectHamburgerState);
+
+  const handleCloseMenu = () => {
+    if (selectHamburgerIsOpen) {
+      dispatch(toggleHamburger());
+    }
+  };
+
+  // Effect to handle the body scroll behavior
+  useEffect(() => {
+    if (selectHamburgerIsOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [selectHamburgerIsOpen]);
 
   return (
     <>
@@ -35,7 +53,7 @@ export default function Header() {
           </div>
         </div>
         <div className={`${s.menuList} ${selectHamburgerIsOpen ? s.show : ""}`}>
-          <MenuList />
+          <MenuList handleClick={handleCloseMenu} />
         </div>
       </header>
     </>

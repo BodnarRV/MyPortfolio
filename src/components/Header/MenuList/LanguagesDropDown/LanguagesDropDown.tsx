@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import s from "./LanguagesDropDown.module.css";
 
-export default function LanguagesDropDown() {
+export default function LanguagesDropDown({ closeHamburger }) {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
   const { i18n, t } = useTranslation();
 
@@ -23,6 +23,7 @@ export default function LanguagesDropDown() {
   const handleLanguageChange = (languageCode: string) => {
     i18n.changeLanguage(languageCode);
     setIsDropDownOpen(false);
+    closeHamburger();
   };
 
   return (

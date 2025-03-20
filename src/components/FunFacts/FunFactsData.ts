@@ -20,7 +20,4 @@ export const funFacts = [
   {
     funFact: "funFact7",
   },
-  {
-    funFact: "funFact1",
-  },
 ];
